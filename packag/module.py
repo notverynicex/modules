@@ -15,26 +15,43 @@ def lettercounter(text):
     print(f"There are {let} characters in this text.")
 
 #Читает язык
-def languagepicker(lang, remember):
-    str(remember)
-    print('На каком языке ты разговариваешь? What language do you speak? ')
-    while lang == "":
+def languagepicker(lang):
+    a = str()
+    print('What language do you speak? ')
+    while a == "":
         try:
-            str(input(lang))
-            if lang.lower() == "руский" or "russian":
-                print("You speak russian. Ты говоришт по-русски. :)")
-                remember == "russian"
-            elif lang.lower() == "english":
+            a = input()
+            a.lower()
+            if a == "russian":
+                print("You speak russian. Ты говоришь по-русски. :)")
+            elif a == "english":
                 print("You speak english. :)")
-                remember == "english"
-            elif lang.lower() == "deutsch" or "german":
+            elif a == "deutsch":
                 print("You speak german. Sie sprechen Deutsch. :)")
-                remember == "german"
             else:
                 print("I don't understand the language you are speaking! :(")
         except ValueError:
-            lang == ""
+            a == ""
             print("Something did not work, I am sorry!")
 
+#hello-bot
+def greeter(name):
+    a = str()
+    print("Hello, " + name + ". Good morning! Tell us how you are today!")
+    while a == "":
+        try:
+            a = input("I feel ")
+            a.lower()
+            if a == "good":
+                print("That is great! Let's get to business.")
+            elif a == "fine":
+                print("Alright! Let us continue.")
+            elif a == "bad":
+                print('What happened buddy?')
+            else:
+                print("I am a computer. I don't know emotions :(")
+        except ValueError:
+            print('No, just no. Try again.')
+            a == ''
 
 
