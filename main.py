@@ -1,1 +1,4 @@
-print("Random")
+from packag import module
+
+
+
