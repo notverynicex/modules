@@ -5,6 +5,15 @@ def listchanger(changer1):
     changer1.sort()
     return
 
+#Считает кольчество char в string.
+def lettercounter(text):
+    let = 0
+    for txt in let:
+        if txt.ischar():
+            let =+ 1
+    print()
+    print(f"There are {let} characters in this text.")
+
 #Читает язык
 def languagepicker(lang, remember):
     str(remember)
@@ -26,7 +35,6 @@ def languagepicker(lang, remember):
         except ValueError:
             lang == ""
             print("Something did not work, I am sorry!")
-
 
 
 
